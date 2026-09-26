@@ -1,0 +1,1 @@
+document.querySelectorAll('nav button').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('nav button').forEach(x=>x.classList.remove('active'));btn.classList.add('active')}));if('serviceWorker'in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));}
