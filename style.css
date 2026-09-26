@@ -20,24 +20,12 @@
 .message-actions-card button:active{background:#ffffff12!important}.message-actions-card svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .message-actions-card .danger{color:#ff625c!important}
 
-/* V33 quoted replies */
-.reply-preview{position:fixed;z-index:12;left:50%;bottom:68px;transform:translateX(-50%);width:min(100%,560px);min-height:58px;padding:9px 15px;display:flex;align-items:center;gap:10px;background:#17191ef2;border-top:1px solid #ffffff18;backdrop-filter:blur(22px)}
-.reply-preview>div{min-width:0;flex:1;padding-left:10px;border-left:3px solid #1687ff}.reply-preview b,.reply-preview span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.reply-preview b{font-size:12px;color:#58a9ff;margin-bottom:3px}.reply-preview span{font-size:13px;color:#b9bdc7}.reply-preview button{width:30px;height:30px;border:0;border-radius:50%;background:#2b2e35;color:#fff;font-size:20px}
-.reply-msg{padding:8px 10px 10px!important}.reply-quote{margin:-2px -2px 7px;padding:7px 9px;border-left:3px solid #fff9;border-radius:7px;background:#0002}.reply-quote b,.reply-quote span{display:block}.reply-quote b{font-size:11px;opacity:.9;margin-bottom:2px}.reply-quote span{font-size:12px;opacity:.8;max-width:210px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.reply-text{font-size:17px}
-
-/* V34 JOON connected-line reply */
-.reply-wrap.mine{align-self:flex-end;display:flex;flex-direction:column;align-items:flex-end;max-width:78%;margin:2px 0 8px}
-.reply-wrap .reply-link{position:relative;display:flex;align-items:center;gap:5px;max-width:100%;margin:0 10px 4px 0;padding-left:12px;color:#9ba9bd;font-size:12px;line-height:18px}
-.reply-wrap .reply-link:before{content:"";position:absolute;left:1px;bottom:-9px;width:9px;height:14px;border-left:2px solid #1687ff;border-bottom:2px solid #1687ff;border-radius:0 0 0 8px;opacity:.9}
-.reply-wrap .reply-arrow{color:#58a9ff;font-size:15px;font-weight:700}.reply-wrap .reply-source{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.reply-wrap .reply-source b{color:#b9c7db;font-weight:700}
-.reply-wrap .reply-msg{margin:0!important;max-width:100%!important}.reply-wrap .reply-text{font-size:17px}
-
-/* V35 reply layout fix: source outside bubble + visible connector */
-.messages>.reply-wrap.mine{align-self:stretch!important;width:100%!important;max-width:none!important;margin:4px 0 10px!important;display:flex!important;flex-direction:column!important;align-items:flex-end!important}
-.messages>.reply-wrap.mine>.reply-link{position:relative!important;box-sizing:border-box!important;width:auto!important;max-width:72%!important;margin:0 12px 7px 0!important;padding:0 3px 0 18px!important;background:transparent!important;color:#8f9bad!important;font-size:12px!important;line-height:18px!important}
-.messages>.reply-wrap.mine>.reply-link:before{content:""!important;position:absolute!important;left:4px!important;top:9px!important;bottom:-16px!important;width:8px!important;height:auto!important;border-left:2px solid #1687ff!important;border-bottom:2px solid #1687ff!important;border-radius:0 0 0 8px!important;opacity:.9!important}
-.messages>.reply-wrap.mine>.reply-link .reply-arrow{display:none!important}
-.messages>.reply-wrap.mine>.reply-link .reply-source{position:relative;z-index:1;display:block!important;max-width:100%!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}
-.messages>.reply-wrap.mine>.reply-link .reply-source b{color:#70b4ff!important}
-.messages>.reply-wrap.mine>.msg.reply-msg{align-self:flex-end!important;display:inline-block!important;width:auto!important;max-width:72%!important;margin:0!important;padding:11px 15px!important;border-radius:20px 20px 5px 20px!important}
-.messages>.reply-wrap.mine>.msg.reply-msg .reply-text{font-size:17px!important;line-height:1.35!important;white-space:normal!important}
+/* V36 JOON reply — connected source outside bubble */
+.reply-preview{position:fixed;z-index:12;left:50%;bottom:68px;transform:translateX(-50%);width:min(100%,560px);min-height:48px;padding:7px 15px;display:flex;align-items:center;gap:9px;background:#17191ef2;border-top:1px solid #ffffff18;backdrop-filter:blur(22px)}
+.reply-preview>div{min-width:0;flex:1;padding-left:9px;border-left:2px solid #1687ff}.reply-preview b,.reply-preview span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.reply-preview b{font-size:11px;color:#58a9ff}.reply-preview span{font-size:12px;color:#aeb5c0}.reply-preview button{width:28px;height:28px;border:0;border-radius:50%;background:#2b2e35;color:#fff;font-size:18px}
+.messages>.reply-wrap{align-self:flex-end!important;width:auto!important;max-width:76%!important;margin:4px 0 10px!important;display:flex!important;flex-direction:column!important;align-items:flex-end!important;background:transparent!important;color:inherit!important}
+.messages>.reply-wrap>.reply-link{position:relative!important;align-self:flex-end!important;display:block!important;width:auto!important;max-width:100%!important;margin:0 8px 7px 0!important;padding:0 0 0 16px!important;background:transparent!important;color:#8e9aab!important;font-size:12px!important;line-height:17px!important;white-space:nowrap!important}
+.messages>.reply-wrap>.reply-link:before{content:""!important;position:absolute!important;left:3px!important;top:8px!important;width:8px!important;height:22px!important;border-left:2px solid #1687ff!important;border-bottom:2px solid #1687ff!important;border-radius:0 0 0 7px!important}
+.messages>.reply-wrap .reply-arrow{display:none!important}.messages>.reply-wrap .reply-source{display:block!important;max-width:230px!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}.messages>.reply-wrap .reply-source b{color:#66adff!important;font-weight:700!important}
+.messages>.reply-wrap>.reply-msg{align-self:flex-end!important;display:block!important;width:max-content!important;max-width:100%!important;margin:0!important;padding:11px 14px!important;border-radius:19px 19px 5px 19px!important;background:#1687ff!important;color:#fff!important}
+.messages>.reply-wrap>.reply-msg .reply-text{font-size:17px!important;line-height:1.35!important;white-space:pre-wrap!important}
