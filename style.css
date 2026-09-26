@@ -19,3 +19,8 @@
 .message-actions-card button{min-width:62px!important;height:46px!important;padding:0 10px!important;border:0!important;border-radius:14px!important;flex-direction:column!important;gap:2px!important;font-size:11px!important}
 .message-actions-card button:active{background:#ffffff12!important}.message-actions-card svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
 .message-actions-card .danger{color:#ff625c!important}
+
+/* V33 quoted replies */
+.reply-preview{position:fixed;z-index:12;left:50%;bottom:68px;transform:translateX(-50%);width:min(100%,560px);min-height:58px;padding:9px 15px;display:flex;align-items:center;gap:10px;background:#17191ef2;border-top:1px solid #ffffff18;backdrop-filter:blur(22px)}
+.reply-preview>div{min-width:0;flex:1;padding-left:10px;border-left:3px solid #1687ff}.reply-preview b,.reply-preview span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.reply-preview b{font-size:12px;color:#58a9ff;margin-bottom:3px}.reply-preview span{font-size:13px;color:#b9bdc7}.reply-preview button{width:30px;height:30px;border:0;border-radius:50%;background:#2b2e35;color:#fff;font-size:20px}
+.reply-msg{padding:8px 10px 10px!important}.reply-quote{margin:-2px -2px 7px;padding:7px 9px;border-left:3px solid #fff9;border-radius:7px;background:#0002}.reply-quote b,.reply-quote span{display:block}.reply-quote b{font-size:11px;opacity:.9;margin-bottom:2px}.reply-quote span{font-size:12px;opacity:.8;max-width:210px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.reply-text{font-size:17px}
