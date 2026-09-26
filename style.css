@@ -23,10 +23,10 @@
 /* V39 JOON mini-anchor reply */
 .reply-preview{position:fixed;z-index:12;left:50%;bottom:68px;transform:translateX(-50%);width:min(100%,560px);min-height:48px;padding:7px 15px;display:flex;align-items:center;gap:9px;background:#17191ef2;border-top:1px solid #ffffff18;backdrop-filter:blur(22px)}
 .reply-preview>div{min-width:0;flex:1;padding-left:9px;border-left:2px solid #1687ff}.reply-preview b,.reply-preview span{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.reply-preview b{font-size:11px;color:#58a9ff}.reply-preview span{font-size:12px;color:#aeb5c0}.reply-preview button{width:28px;height:28px;border:0;border-radius:50%;background:#2b2e35;color:#fff;font-size:18px}
-.messages>.reply-wrap{align-self:flex-end!important;width:auto!important;max-width:82%!important;margin:4px 0 10px!important;display:flex!important;align-items:center!important;gap:7px!important;background:transparent!important}
+.messages>.reply-wrap{align-self:flex-end!important;width:auto!important;max-width:82%!important;margin:4px 0 10px!important;display:flex!important;align-items:center!important;gap:4px!important;background:transparent!important}
 .messages>.reply-wrap>.reply-msg{display:block!important;width:max-content!important;max-width:100%!important;margin:0!important;padding:11px 14px!important;border-radius:19px 19px 5px 19px!important;background:#1687ff!important;color:#fff!important}
 .messages>.reply-wrap>.reply-msg .reply-text{font-size:17px!important;line-height:1.35!important;white-space:pre-wrap!important}
-.reply-anchor-btn{flex:0 0 31px;width:31px;height:31px;padding:0;border:1px solid #1687ff66;border-radius:50%;display:grid;place-items:center;background:#1687ff14;color:#1687ff;backdrop-filter:blur(8px)}
-.reply-anchor-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.reply-anchor-btn:active{transform:scale(.92);background:#1687ff2c}
+.reply-anchor-btn{flex:0 0 27px;width:27px;height:27px;margin-right:-3px;padding:0;border:1px solid #1687ff66;border-radius:50%;display:grid;place-items:center;background:#1687ff14;color:#1687ff;backdrop-filter:blur(8px)}
+.reply-anchor-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.reply-anchor-btn:active{transform:scale(.92);background:#1687ff2c}
 .messages .reply-highlight{animation:joonReplyFlash 1.15s ease both}
 @keyframes joonReplyFlash{0%{box-shadow:0 0 0 0 #1687ff00}20%{box-shadow:0 0 0 3px #1687ff,0 0 24px #1687ffaa}55%{box-shadow:0 0 0 2px #1687ffbb,0 0 18px #1687ff66}100%{box-shadow:0 0 0 0 #1687ff00}}
