@@ -31,3 +31,13 @@
 .reply-wrap .reply-link:before{content:"";position:absolute;left:1px;bottom:-9px;width:9px;height:14px;border-left:2px solid #1687ff;border-bottom:2px solid #1687ff;border-radius:0 0 0 8px;opacity:.9}
 .reply-wrap .reply-arrow{color:#58a9ff;font-size:15px;font-weight:700}.reply-wrap .reply-source{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.reply-wrap .reply-source b{color:#b9c7db;font-weight:700}
 .reply-wrap .reply-msg{margin:0!important;max-width:100%!important}.reply-wrap .reply-text{font-size:17px}
+
+/* V35 reply layout fix: source outside bubble + visible connector */
+.messages>.reply-wrap.mine{align-self:stretch!important;width:100%!important;max-width:none!important;margin:4px 0 10px!important;display:flex!important;flex-direction:column!important;align-items:flex-end!important}
+.messages>.reply-wrap.mine>.reply-link{position:relative!important;box-sizing:border-box!important;width:auto!important;max-width:72%!important;margin:0 12px 7px 0!important;padding:0 3px 0 18px!important;background:transparent!important;color:#8f9bad!important;font-size:12px!important;line-height:18px!important}
+.messages>.reply-wrap.mine>.reply-link:before{content:""!important;position:absolute!important;left:4px!important;top:9px!important;bottom:-16px!important;width:8px!important;height:auto!important;border-left:2px solid #1687ff!important;border-bottom:2px solid #1687ff!important;border-radius:0 0 0 8px!important;opacity:.9!important}
+.messages>.reply-wrap.mine>.reply-link .reply-arrow{display:none!important}
+.messages>.reply-wrap.mine>.reply-link .reply-source{position:relative;z-index:1;display:block!important;max-width:100%!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}
+.messages>.reply-wrap.mine>.reply-link .reply-source b{color:#70b4ff!important}
+.messages>.reply-wrap.mine>.msg.reply-msg{align-self:flex-end!important;display:inline-block!important;width:auto!important;max-width:72%!important;margin:0!important;padding:11px 15px!important;border-radius:20px 20px 5px 20px!important}
+.messages>.reply-wrap.mine>.msg.reply-msg .reply-text{font-size:17px!important;line-height:1.35!important;white-space:normal!important}
