@@ -30,3 +30,9 @@
 .reply-anchor-btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.reply-anchor-btn:active{transform:scale(.92);background:#1687ff2c}
 .messages .reply-highlight{animation:joonReplyFlash 1.15s ease both}
 @keyframes joonReplyFlash{0%{box-shadow:0 0 0 0 #1687ff00}20%{box-shadow:0 0 0 3px #1687ff,0 0 24px #1687ffaa}55%{box-shadow:0 0 0 2px #1687ffbb,0 0 18px #1687ff66}100%{box-shadow:0 0 0 0 #1687ff00}}
+
+/* V43 JOON unread mark */
+.messages .mine.unread,.messages>.reply-wrap.unread{position:relative!important;overflow:visible!important}
+.unread-mark{position:absolute;right:-10px;top:-14px;display:block!important;font-style:normal;font-size:14px;font-weight:800;line-height:1;color:#1687ff;opacity:.9;pointer-events:none;text-shadow:0 1px 5px #1687ff26}
+.messages>.reply-wrap.unread>.unread-mark{right:-10px;top:-10px}
+@media(prefers-color-scheme:dark){.unread-mark{color:#58a9ff}}
