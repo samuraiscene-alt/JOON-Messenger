@@ -1,39 +1,27 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#f7f8fc">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="JOON">
-  <title>JOON MESSENGER</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f9ff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="JOON">
+<title>JOON MESSENGER</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="app">
-    <header>
-      <div><span class="eyebrow">JOON</span><h1>MESSENGER</h1></div>
-      <button class="compose" aria-label="새 대화">✎</button>
-    </header>
-    <section class="search">⌕ <span>대화 검색</span></section>
-    <section class="hero">
-      <div class="bubble">J</div>
-      <div><strong>JOON MESSENGER</strong><p>메시지로 더 가까워져요 💙</p></div>
-    </section>
-    <section class="empty">
-      <div class="mark">💬</div>
-      <h2>새로운 대화를 시작해보세요</h2>
-      <p>친구를 추가하면 여기에서 바로 대화할 수 있어요.</p>
-      <button>새 대화</button>
-    </section>
-  </main>
-  <nav>
-    <button class="active"><span>●</span>채팅</button>
-    <button><span>●</span>사람</button>
-    <button><span>●</span>설정</button>
-  </nav>
-  <script src="app.js"></script>
-</body>
-</html>
+<main id="app" class="app">
+<header><div><span class="eyebrow">JOON</span><h1>MESSENGER</h1></div><button class="compose">✎</button></header>
+<section class="search">⌕ <span>대화 검색</span></section>
+<section class="hero"><div class="bubble">J</div><div><strong>JOON MESSENGER</strong><p>메시지로 더 가까워져요 💙</p></div></section>
+<section class="empty"><div class="mark">💬</div><h2>새로운 대화를 시작해보세요</h2><p>친구를 추가하면 여기에서 바로 대화할 수 있어요.</p><button>새 대화</button></section>
+</main>
+<nav class="tabbar">
+<button data-tab="chats" class="active"><span class="tabicon">💬</span><span>채팅</span></button>
+<button data-tab="people"><span class="tabicon">👤</span><span>사람</span></button>
+<button data-tab="settings"><span class="tabicon">⚙️</span><span>설정</span></button>
+</nav>
+<script src="app.js"></script>
+</body></html>
