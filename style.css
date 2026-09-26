@@ -27,5 +27,5 @@
 .messages>.reply-wrap{position:relative;align-self:flex-end!important;width:auto!important;max-width:76%!important;margin:4px 0 10px!important;display:flex!important;align-items:flex-end!important;background:transparent!important}
 .messages>.reply-wrap>.reply-msg{position:relative;z-index:2;display:block!important;width:max-content!important;max-width:100%!important;margin:0!important;padding:11px 14px!important;border-radius:19px 19px 5px 19px!important;background:#1687ff!important;color:#fff!important}
 .messages>.reply-wrap>.reply-msg .reply-text{font-size:17px!important;line-height:1.35!important;white-space:pre-wrap!important}
-.reply-connector{position:absolute;z-index:1;overflow:visible;pointer-events:none;fill:none;stroke:#1687ff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.reply-connector{position:absolute;z-index:1;display:block!important;overflow:visible;pointer-events:none;fill:none;stroke:#1687ff;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
 .reply-connector path{fill:none}.reply-connector polyline{fill:none}
