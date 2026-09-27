@@ -109,3 +109,11 @@
 .file-share{flex:0 0 34px;width:34px;height:34px;margin-left:8px;border:0;border-radius:50%;display:grid;place-items:center;background:#ffffff12;color:inherit}
 .file-share svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
 .file-share:active{transform:scale(.93)}
+
+/* V59 compact JOON file card */
+.messages>.file-msg{width:auto!important;max-width:min(78%,390px)!important;min-width:0!important;padding:10px 11px!important;gap:10px!important}
+.file-msg .file-type{flex:0 0 54px!important;width:54px!important;height:54px!important}
+.file-msg .file-info{min-width:0!important;flex:1!important}
+.file-msg .file-info b{display:block!important;max-width:100%!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important}
+.file-msg .file-info small{display:block!important;margin-top:3px!important}
+.file-msg .file-share{flex:0 0 34px!important;margin-left:2px!important}
