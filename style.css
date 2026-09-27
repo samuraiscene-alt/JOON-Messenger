@@ -33,6 +33,6 @@
 
 /* V43 JOON unread mark */
 .messages .mine.unread,.messages>.reply-wrap.unread{position:relative!important;overflow:visible!important}
-.unread-mark{position:absolute;right:-10px;top:-14px;display:block!important;font-style:normal;font-size:14px;font-weight:800;line-height:1;color:#1687ff;opacity:.9;pointer-events:none;text-shadow:0 1px 5px #1687ff26}
-.messages>.reply-wrap.unread>.unread-mark{right:-10px;top:-10px}
-@media(prefers-color-scheme:dark){.unread-mark{color:#58a9ff}}
+.messages .unread-mark{position:absolute!important;right:-13px!important;top:-16px!important;display:block!important;visibility:visible!important;font-style:normal!important;font-size:17px!important;font-weight:800!important;line-height:1!important;color:#1687ff!important;opacity:1!important;pointer-events:none!important;text-shadow:0 1px 6px #1687ff55;z-index:6}
+.messages>.reply-wrap.unread>.unread-mark{right:-13px!important;top:-13px!important}
+@media(prefers-color-scheme:dark){.messages .unread-mark{color:#58a9ff!important}}
