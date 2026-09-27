@@ -86,3 +86,10 @@
 .media-viewer-body video{width:100%;max-height:100dvh;background:#000}
 .media-viewer-close{position:absolute;z-index:2;top:max(14px,env(safe-area-inset-top));right:16px;width:42px;height:42px;border:0;border-radius:50%;display:grid;place-items:center;background:#1c1c1eb8;color:#fff;font-size:30px;font-weight:300;line-height:1;backdrop-filter:blur(16px)}
 .media-viewer-close:active{transform:scale(.94)}
+
+/* V54 media tools + future expired attachment card */
+.media-viewer-tools{position:absolute;z-index:3;top:max(14px,env(safe-area-inset-top));right:16px;display:flex;gap:9px}
+.media-viewer-tools .media-viewer-close,.media-viewer-tools .media-download{position:static!important;width:42px;height:42px;border:0;border-radius:50%;display:grid;place-items:center;background:#1c1c1eb8;color:#fff;backdrop-filter:blur(16px)}
+.media-viewer-tools .media-download{font-size:25px;font-weight:650;line-height:1}
+.expired-media{align-self:flex-end;width:92px;height:92px;border:1px solid #ffffff12;border-radius:18px;display:grid;place-items:center;background:#24272e66;opacity:.48;filter:grayscale(1);pointer-events:none}
+.expired-media img{width:58px;height:58px;object-fit:contain;opacity:.55}
