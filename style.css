@@ -140,3 +140,6 @@
 .chat-search .search-close{flex-basis:auto;width:auto;padding:0 2px;font-size:14px}
 .messages .search-hit{outline:1px solid #ffd60a88;outline-offset:2px}
 .messages .search-current{outline:3px solid #ffd60a;outline-offset:2px}
+
+/* V62 balance room search icon */
+.room-menu-card>[data-room-act="search"]>span{font-size:25px!important;line-height:1;transform:translateY(-1px)}
