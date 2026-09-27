@@ -72,3 +72,8 @@
 /* V50 retry is handled by the ! badge only */
 .messages [data-send="failed"]::after{content:none!important;display:none!important}
 .messages [data-send="failed"]::before{pointer-events:none}
+
+/* V52 failed status anchored to its bubble; whole failed bubble is tappable */
+.messages [data-send="failed"]{position:relative!important;overflow:visible!important;cursor:pointer}
+.messages [data-send="failed"]::before{left:-6px!important;right:auto!important;top:-6px!important;bottom:auto!important}
+.messages>.reply-wrap[data-send="failed"]::before{left:-6px!important;right:auto!important;top:-6px!important}
