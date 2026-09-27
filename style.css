@@ -169,3 +169,6 @@
 
 /* V75 real chat list */
 .chat-list-empty{min-height:52vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;text-align:center;color:#8e8e93}.chat-list-empty .mark{font-size:38px;margin-bottom:10px}.chat-list-empty b{color:inherit;font-size:17px;margin-bottom:6px}.chat-list-empty span{max-width:260px;font-size:13px;line-height:1.5}
+
+/* V76 real chat attachments */
+.real-attachment{display:flex!important;align-items:center;gap:9px;cursor:pointer;max-width:78%!important}.real-attachment>b{font-size:24px}.real-attachment>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.real-attachment small{display:block;margin-top:2px;font-size:11px;opacity:.65}.real-attachment.expired{filter:saturate(.2);opacity:.58;cursor:default}.real-attachment.expired>b{filter:blur(.5px)}
