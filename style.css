@@ -163,3 +163,6 @@
 
 /* V71 friend requests */
 .friend-request-actions{display:flex;gap:6px;margin-left:auto}.friend-request-actions button{height:34px;padding:0 11px;border:0;border-radius:10px;background:#e9edf4;color:#555;font-size:13px;font-weight:700}.friend-request-actions button[data-answer="accept"]{background:#1687ff;color:#fff}@media(prefers-color-scheme:dark){.friend-request-actions button{background:#30343c;color:#d7dbe2}}
+
+/* V72 real direct chat */
+.contact-row[data-friend]{cursor:pointer}.direct-empty{margin:auto;padding:40px 20px;text-align:center;color:#8e8e93;font-size:14px}.real-composer .plus-btn:disabled{opacity:.32}
