@@ -56,3 +56,9 @@
 .messages [data-send="failed"]::before{left:9px!important;right:auto!important;top:7px!important;bottom:auto!important;width:auto!important;height:auto!important;border-radius:0!important;display:block!important;background:transparent!important;color:#fff!important;font-size:13px!important;font-weight:900!important;line-height:1!important;box-shadow:none!important}
 .messages>.reply-wrap[data-send="failed"]::before{left:36px!important;right:auto!important;top:7px!important}
 .messages [data-send="failed"]::after{right:0!important;top:calc(100% + 3px)!important}
+
+/* V48 unified status: outside upper-left at 45 degrees */
+.messages .mine[data-read="unread"]::after{left:-13px!important;right:auto!important;top:-15px!important;text-shadow:0 1px 6px #1687ff55!important}
+.messages>.reply-wrap[data-read="unread"]::after{left:-13px!important;right:auto!important;top:-15px!important}
+.messages [data-send="failed"]::before{left:-13px!important;right:auto!important;top:-15px!important;bottom:auto!important;width:16px!important;height:16px!important;border-radius:50%!important;display:grid!important;place-items:center!important;background:#ff453a!important;color:#fff!important;font-size:11px!important;line-height:16px!important;box-shadow:0 2px 7px #ff453a44!important}
+.messages>.reply-wrap[data-send="failed"]::before{left:-13px!important;right:auto!important;top:-15px!important}
