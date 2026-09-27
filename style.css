@@ -97,3 +97,9 @@
 /* V55 unified iOS share action */
 .media-viewer-tools .media-share{position:static!important;width:42px;height:42px;border:0;border-radius:50%;display:grid;place-items:center;background:#1c1c1eb8;color:#fff;backdrop-filter:blur(16px)}
 .media-viewer-tools .media-share svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+
+/* V57 share completion feedback */
+.save-toast{position:fixed;z-index:100;left:50%;top:50%;transform:translate(-50%,-50%) scale(.78);width:104px;height:104px;border-radius:32px;display:grid;place-items:center;background:#1c1c1ed9;color:#fff;backdrop-filter:blur(22px);opacity:0;visibility:hidden;pointer-events:none}
+.save-toast span{font-size:67px;font-weight:350;line-height:1}
+.save-toast.show{visibility:visible;animation:joonSaveCheck 1.1s ease both}
+@keyframes joonSaveCheck{0%{opacity:0;transform:translate(-50%,-50%) scale(.72)}18%{opacity:1;transform:translate(-50%,-50%) scale(1.05)}30%,72%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-50%) scale(.94)}}
