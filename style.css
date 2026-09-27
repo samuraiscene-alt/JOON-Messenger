@@ -195,3 +195,7 @@
 
 /* JOON group unread: ? + exact remaining readers */
 .messages .mine[data-read="unread"][data-unread-count]::after{content:"?" attr(data-unread-count)!important;white-space:nowrap}
+
+/* Group message sender identity */
+.real-messages .group-sender-name{margin:7px 0 3px 9px;max-width:72%;font-size:12px;font-weight:650;color:#8e8e93;line-height:1.2}
+@media(prefers-color-scheme:dark){.real-messages .group-sender-name{color:#a7a7ad}}
