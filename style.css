@@ -166,3 +166,6 @@
 
 /* V72 real direct chat */
 .contact-row[data-friend]{cursor:pointer}.direct-empty{margin:auto;padding:40px 20px;text-align:center;color:#8e8e93;font-size:14px}.real-composer .plus-btn:disabled{opacity:.32}
+
+/* V75 real chat list */
+.chat-list-empty{min-height:52vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:30px;text-align:center;color:#8e8e93}.chat-list-empty .mark{font-size:38px;margin-bottom:10px}.chat-list-empty b{color:inherit;font-size:17px;margin-bottom:6px}.chat-list-empty span{max-width:260px;font-size:13px;line-height:1.5}
