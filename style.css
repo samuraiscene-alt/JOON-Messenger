@@ -178,3 +178,6 @@
 
 /* V78 real message long press */
 .real-messages .msg{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}.real-messages .msg img,.real-messages .msg video{-webkit-user-drag:none;-webkit-touch-callout:none}.real-msg-menu{position:fixed;z-index:10020;display:flex;overflow:hidden;padding:4px;border-radius:14px;background:rgba(34,34,38,.96);box-shadow:0 8px 28px rgba(0,0,0,.28);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}.real-msg-menu button{border:0;background:transparent;color:#fff;font-size:14px;font-weight:600;padding:9px 13px;white-space:nowrap}.real-msg-menu button+button{border-left:1px solid rgba(255,255,255,.12)}
+
+/* V79 real reply anchor */
+.real-messages .real-reply-anchor{width:27px;height:27px;min-width:27px;border:0;border-radius:50%;padding:0;margin:0 -3px 0 4px;align-self:center;background:#0a84ff;color:#fff;font-size:15px;font-weight:800;line-height:27px;text-align:center;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}.real-messages .real-reply-anchor+.msg{margin-left:0}.real-messages .reply-flash{animation:joonReplyFlash .9s ease}@keyframes joonReplyFlash{0%,100%{filter:none}35%{filter:brightness(1.35);box-shadow:0 0 0 4px rgba(10,132,255,.24)}}
