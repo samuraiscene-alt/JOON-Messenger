@@ -1,5 +1,9 @@
-const CACHE='joon-messenger-v6';
+const CACHE='joon-messenger-v7';
 const ASSETS=['./manifest.json','./joon-icon-192.png','./joon-icon-512.png'];
 self.addEventListener('install',e=>{self.skipWaiting();e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});
 self.addEventListener('activate',e=>e.waitUntil(Promise.all([self.clients.claim(),caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))])));
 self.addEventListener('fetch',e=>{const r=e.request,u=new URL(r.url);if(r.method!=='GET')return;if(u.origin===location.origin&&(r.mode==='navigate'||/\.(html|css|js)$/.test(u.pathname))){e.respondWith(fetch(r,{cache:'no-store'}).catch(()=>caches.match(r)));return}e.respondWith(caches.match(r).then(x=>x||fetch(r).then(res=>{const copy=res.clone();caches.open(CACHE).then(cache=>cache.put(r,copy));return res})))});
+
+self.addEventListener('push',e=>{let d={};try{d=e.data?e.data.json():{}}catch{d={body:e.data?.text()||'새 메시지가 도착했어요.'}}const title=d.title||'JOON MESSENGER',body=d.body||'새 메시지가 도착했어요.',url=d.url||'./';e.waitUntil(self.registration.showNotification(title,{body,icon:'./joon-icon-192.png',badge:'./joon-icon-192.png',tag:d.tag||'joon-message',renotify:true,data:{url}}))});
+self.addEventListener('notificationclick',e=>{e.notification.close();const target=new URL(e.notification.data?.url||'./',self.location.origin).href;e.waitUntil(clients.matchAll({type:'window',includeUncontrolled:true}).then(list=>{for(const c of list){if(c.url.startsWith(self.location.origin)&&'focus'in c){c.navigate(target);return c.focus()}}return clients.openWindow(target)}))});
+self.addEventListener('message',e=>{if(e.data?.type==='JOON_BADGE'){const n=Number(e.data.count)||0;if(n&&self.registration.setAppBadge)self.registration.setAppBadge(n);else if(self.registration.clearAppBadge)self.registration.clearAppBadge()}});
