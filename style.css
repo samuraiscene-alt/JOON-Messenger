@@ -93,3 +93,7 @@
 .media-viewer-tools .media-download{font-size:25px;font-weight:650;line-height:1}
 .expired-media{align-self:flex-end;width:92px;height:92px;border:1px solid #ffffff12;border-radius:18px;display:grid;place-items:center;background:#24272e66;opacity:.48;filter:grayscale(1);pointer-events:none}
 .expired-media img{width:58px;height:58px;object-fit:contain;opacity:.55}
+
+/* V55 unified iOS share action */
+.media-viewer-tools .media-share{position:static!important;width:42px;height:42px;border:0;border-radius:50%;display:grid;place-items:center;background:#1c1c1eb8;color:#fff;backdrop-filter:blur(16px)}
+.media-viewer-tools .media-share svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
