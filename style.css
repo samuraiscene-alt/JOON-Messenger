@@ -129,3 +129,14 @@
 .room-menu-card>[data-room-act]>span{width:26px;text-align:center;font-size:21px;color:#8abfff}
 .room-menu-card>[data-room-act]>b{font-size:15px;font-weight:650}
 .room-menu-card>[data-room-act].danger{color:#ff625c}.room-menu-card>[data-room-act].danger>span{color:#ff625c}
+
+/* V61 in-chat search */
+.room-bell svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.chat-search{min-width:0;flex:1;display:flex;align-items:center;gap:6px;margin-left:6px}
+.chat-search input{min-width:0;flex:1;height:38px;border:0;border-radius:12px;padding:0 11px;background:#ffffff12;color:inherit;font-size:16px;outline:none}
+.chat-search input::placeholder{color:#8e8e93}
+.chat-search .search-count{min-width:30px;text-align:center;font-size:12px;color:#8e8e93}
+.chat-search button{flex:0 0 30px;height:30px;padding:0;border:0;background:transparent;color:#1687ff;font-size:18px}
+.chat-search .search-close{flex-basis:auto;width:auto;padding:0 2px;font-size:14px}
+.messages .search-hit{outline:1px solid #ffd60a88;outline-offset:2px}
+.messages .search-current{outline:3px solid #ffd60a;outline-offset:2px}
