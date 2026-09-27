@@ -68,3 +68,7 @@
 .messages>.reply-wrap[data-read="unread"]::after{left:-7px!important;right:auto!important;top:-7px!important}
 .messages [data-send="failed"]::before{left:-7px!important;right:auto!important;top:-7px!important}
 .messages>.reply-wrap[data-send="failed"]::before{left:-7px!important;right:auto!important;top:-7px!important}
+
+/* V50 retry is handled by the ! badge only */
+.messages [data-send="failed"]::after{content:none!important;display:none!important}
+.messages [data-send="failed"]::before{pointer-events:none}
