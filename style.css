@@ -62,3 +62,9 @@
 .messages>.reply-wrap[data-read="unread"]::after{left:-13px!important;right:auto!important;top:-15px!important}
 .messages [data-send="failed"]::before{left:-13px!important;right:auto!important;top:-15px!important;bottom:auto!important;width:16px!important;height:16px!important;border-radius:50%!important;display:grid!important;place-items:center!important;background:#ff453a!important;color:#fff!important;font-size:11px!important;line-height:16px!important;box-shadow:0 2px 7px #ff453a44!important}
 .messages>.reply-wrap[data-send="failed"]::before{left:-13px!important;right:auto!important;top:-15px!important}
+
+/* V49 status badge overlaps its own bubble corner */
+.messages .mine[data-read="unread"]::after{left:-7px!important;right:auto!important;top:-7px!important}
+.messages>.reply-wrap[data-read="unread"]::after{left:-7px!important;right:auto!important;top:-7px!important}
+.messages [data-send="failed"]::before{left:-7px!important;right:auto!important;top:-7px!important}
+.messages>.reply-wrap[data-send="failed"]::before{left:-7px!important;right:auto!important;top:-7px!important}
