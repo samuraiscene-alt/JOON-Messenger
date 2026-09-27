@@ -143,3 +143,7 @@
 
 /* V62 balance room search icon */
 .room-menu-card>[data-room-act="search"]>span{font-size:25px!important;line-height:1;transform:translateY(-1px)}
+
+/* V63 true SVG search icon, matched to bell */
+.room-menu-card>[data-room-act="search"]>.room-search-icon{font-size:0!important;line-height:1;transform:none!important;display:grid;place-items:center}
+.room-search-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2.15;stroke-linecap:round;stroke-linejoin:round}
