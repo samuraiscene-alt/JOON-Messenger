@@ -42,3 +42,11 @@
 .messages .mine[data-read="unread"]::after,.messages>.reply-wrap[data-read="unread"]::after{content:"?";position:absolute;right:-13px;top:-16px;display:block;font-size:17px;font-weight:800;line-height:1;color:#1687ff;z-index:6;text-shadow:0 1px 6px #1687ff55}
 .messages>.reply-wrap[data-read="unread"]::after{top:-13px}
 @media(prefers-color-scheme:dark){.messages .mine[data-read="unread"]::after,.messages>.reply-wrap[data-read="unread"]::after{color:#58a9ff}}
+
+/* V46 JOON send state */
+.messages [data-send="sending"]{position:relative!important;opacity:.72;transition:opacity .18s ease}
+.messages [data-send="sending"]::before{content:"···";position:absolute;right:-20px;bottom:2px;color:#8e95a1;font-size:12px;font-weight:800;letter-spacing:-1px;line-height:1}
+.messages [data-send="failed"]{position:relative!important}
+.messages [data-send="failed"]::before{content:"!";position:absolute;right:-19px;bottom:0;width:16px;height:16px;border-radius:50%;display:grid;place-items:center;background:#ff453a;color:#fff;font-size:11px;font-weight:900;line-height:16px;box-shadow:0 2px 7px #ff453a44}
+.messages [data-send="failed"]::after{content:"탭하여 재전송";position:absolute;right:0;top:calc(100% + 3px);white-space:nowrap;color:#ff453a;font-size:10px;font-weight:650}
+.messages>.reply-wrap[data-send="sending"]::before,.messages>.reply-wrap[data-send="failed"]::before{right:-20px}
