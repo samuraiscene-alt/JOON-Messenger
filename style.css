@@ -215,3 +215,5 @@
 .invite-share{width:min(100%,360px);height:52px;border:0;border-radius:15px;background:#1687ff;color:#fff;font-size:16px;font-weight:750}
 .invite-card>small{display:block;margin-top:10px;color:#8e8e93}
 @media(prefers-color-scheme:dark){.invite-card{background:#1c1c1e;color:#fff}.invite-head button{background:#2c2c2e;color:#fff}.invite-help{color:#aaaeb6}}
+
+.people-search input{flex:1;min-width:0;border:0;background:transparent;color:inherit;font:inherit;outline:none}.people-search input::placeholder{color:#8e8e93}
